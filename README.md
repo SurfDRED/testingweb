@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/jpvr9s30voofocip?svg=true)](https://ci.appveyor.com/project/SurfDRED/testingweb)
