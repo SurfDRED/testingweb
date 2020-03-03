@@ -18,7 +18,7 @@ public class OrderCardTest {
         $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 
-    @Test void shouldSubmitValidname() {
+    @Test void shouldSubmitNotValidName() {
         open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Дмитрий Iachmentsev");
@@ -28,7 +28,7 @@ public class OrderCardTest {
         $(".input_theme_alfa-on-white.input_invalid .input__sub").shouldHave(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
 
-    @Test void shouldSubmitValidphone() {
+    @Test void shouldSubmitNotValidPhone() {
         open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Дмитрий Ячменцев");
